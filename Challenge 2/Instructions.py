@@ -1,37 +1,27 @@
 """
-Challenge 1: Username Generator
-Tier: 1-Beginner
+Simple Interactive Diary
 
-Objective:
-Develop a program that takes user input and combines them using an f-string to create a unique and personalized username.
+Diaries have been a way for people to keep track of their thoughts, memories, and experiences. In the digital age, having a basic understanding of how to create an interactive diary application is a great way to practice programming concepts. The purpose of the Simple Interactive Diary is to provide practice in using lists, loops, conditional statements, and user input.
 
-Description:
-Usernames are essential in the digital age, whether for social media, gaming, or professional platforms. In this challenge, you'll be creating a program that asks users about their childhood street name and their pet's name. The goal is to combine these names using Python's f-string to generate a unique username that's both personal and memorable.
+Simple Interactive Diary allows the user to add, view, and delete diary entries. Each entry is stored sequentially, and the user can interact with them using a simple menu.
 
-Features:
+This challenge requires that the developer implementing it follow these constraints:
 
-Gather User Input:
+The diary entries must be stored in a list.
+The user should be able to interact with the diary using a while loop until they choose to exit.
+Conditional statements must be used to handle the user's menu choices.
 
-Ask the user for the name of the street they grew up on.
-Ask the user for the name of their pet.
-Combine Names using f-string:
+User Stories:
 
-Use an f-string to combine the street name and the pet's name.
-Display Username:
+User can view a menu with options to add an entry, view entries, delete an entry, or exit.
+User can add a new diary entry which gets stored in the diary.
+User can view all diary entries with a unique entry number.
+User can delete a diary entry using the entry number.
+User is notified of successful additions or deletions.
+User can exit the diary application.
 
-Show the user their generated username.
-Sample Flow:
+Bonus features:
 
-User is prompted: "What was the name of the street you grew up on?"
-User enters: "Maplewood"
-User is prompted: "What was your pet's name?"
-User enters: "Whiskers"
-The program generates the username: "Maplewood_Whiskers" using an f-string and displays it to the user.
-Constraints:
-
-Ensure that the user's input for the street name and pet's name is not empty. If it is, prompt them again.
-Bonus Features:
-
-Allow the user to choose a separator (like a hyphen, underscore, or period) to use between the names.
-Add a feature where the program suggests multiple username variations for the user to choose from.
+Implement a search feature where the user can search for specific words or phrases in the diary entries.
+Allow the user to edit an existing diary entry.
 """

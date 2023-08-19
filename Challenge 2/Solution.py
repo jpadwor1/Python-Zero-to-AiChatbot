@@ -1,16 +1,37 @@
-"""
-Challenge 1: Username Generator
-Tier: 1-Beginner
+# List to store diary entries
+diary_entries = []
 
-Objective:
-Develop a program that takes user input and combines them using an f-string to create a unique and personalized username.
+while True:
+    # Display menu to user
+    print("\nSimple Interactive Diary")
+    print("1. Add Entry")
+    print("2. View Entries")
+    print("3. Delete Entry")
+    print("4. Exit")
+    
+    choice = input("Choose an option (1/2/3/4): ")
 
-"""
-user_street = input("What street did you grow up on? Omit St.,Rd., etc.")
+    if choice == "1":
+        entry = input("Type your diary entry: ")
+        diary_entries.append(entry)
+        print("Entry added successfully!")
 
+    elif choice == "2":
+        print("\nDiary Entries:")
+        for i, entry in enumerate(diary_entries, 1):
+            print(f"{i}. {entry}")
 
-user_pet_name = input("What is the name of your favorite pet?")
+    elif choice == "3":
+        entry_num = int(input("Enter the entry number to delete: "))
+        if 0 < entry_num <= len(diary_entries):
+            diary_entries.pop(entry_num - 1)
+            print("Entry deleted successfully!")
+        else:
+            print("Invalid entry number!")
 
+    elif choice == "4":
+        print("Goodbye!")
+        break
 
-print(f"Your username is {user_street}_{user_pet_name}.")
-
+    else:
+        print("Invalid choice! Please choose a valid option.")
