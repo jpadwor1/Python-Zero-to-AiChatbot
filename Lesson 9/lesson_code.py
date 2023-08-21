@@ -21,6 +21,12 @@ formatted_date = today.strftime("%B %d, %Y")
 print(f"Formatted date: {formatted_date}")  
 # Expected Output: Formatted date: Month DD, YYYY
 
+"strptime stands for 'string parse time'. It allows us to convert a date string into a date object. The trick is to tell Python the format of our date string."
+
+
+date_string = "24-12-2022"
+date_object = datetime.datetime.strptime(date_string, "%d-%m-%Y")
+print(f"Converted date: {date_object.date()}")  # Expected Output: Converted date: 2022-12-24
 
 import math
 
